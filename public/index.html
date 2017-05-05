@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="grad">
+<div ng-view></div>
+
+<!-- Angular modules -->
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="/bower_components/ngDraggable/ngDraggable.js"></script>
+
+<script src="app.js"></script>
+
+<!-- Controllers -->
+<script src="controllers/MainController.js"></script>
+
+<!-- Services -->
+<script src="services/GridService.js"></script>
+</body>
+</html>

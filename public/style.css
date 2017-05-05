@@ -1,0 +1,56 @@
+.controls {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.palette {
+    width: 30%;
+    padding: 50px;
+}
+
+.grid {
+    width: 50%;
+    padding: 50px;
+}
+
+.action-button {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.color-button {
+    width: 40px;
+    height: 40px;
+}
+
+.color-title {
+    margin-top: 10px;
+}
+
+.grad {
+    background: #00dfff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #00fffb, #0995ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #00fffb, #0995ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #00fffb, #0995ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #00fffb, #0995ff); /* Standard syntax */
+}
+
+html {
+    background: no-repeat fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.grid-button {
+    border: solid black 1px;
+}
+
+.json {
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}

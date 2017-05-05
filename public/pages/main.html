@@ -1,0 +1,43 @@
+<div class="controls">
+    <div>
+        <button type="button"
+                class="btn btn-warning action-button"
+                ng-click="main.resetGrid()">Reset</button>
+        <button type="button"
+                class="btn btn-success action-button"
+                ng-click="main.saveGrid()">Save</button>
+        <button type="button"
+                class="btn btn-primary action-button"
+                ng-click="main.loadGrid()">Load</button>
+    </div>
+</div>
+<div class="row">
+    <div class="palette col-md-1">
+        <b>Palette</b>
+        <div class="container">
+            <div class="row" ng-repeat="color in main.colors">
+                <div class="color-button col-sm-1"
+                     ng-style="{'background-color': color.hexString}"
+                     ng-drag="true"
+                     ng-drag-data="color"></div>
+                <b class="col-sm-1 color-title" ng-bind="color.title"></b>
+            </div>
+        </div>
+    </div>
+    <div class="grid col-md-6">
+        <div class="container">
+            <div class="row" ng-repeat="row in main.grid">
+                <div ng-repeat="col in row track by $index">
+                    <div class="color-button col-sm-1 grid-button"
+                         ng-style="{'background-color': col.hexString}"
+                         ng-drop="true"
+                         ng-drop-success="main.onDropComplete($data, col)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="json">
+    <p><b>JSON representation</b></p>
+    <span>{{main.grid}}</span>
+</div>
